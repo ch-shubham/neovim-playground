@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #181a28;
+  --foreground: #d9e3d6;
 }
 
 @theme inline {
@@ -14,13 +14,64 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #181a28;
+    --foreground: #d9e3d6;
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: var(--background);
+}
+
 body {
+  height: 100%;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+#__next {
+  height: 100%;
+}
+
+::selection {
+  background: rgba(157, 216, 143, 0.28);
+  color: #ffffff;
+}
+
+/* Tokyo Night Dark overrides for Ace */
+.ace-tomorrow-night-blue {
+  background-color: #1a1b26 !important;
+  color: #a9b1d6 !important;
+}
+
+.ace-tomorrow-night-blue .ace_gutter {
+  background: #16161e !important;
+  color: #3b4261 !important;
+  border-right: 1px solid #1f2335 !important;
+}
+
+.ace-tomorrow-night-blue .ace_gutter-active-line {
+  background-color: #1f2335 !important;
+  color: #737aa2 !important;
+}
+
+.ace-tomorrow-night-blue .ace_active-line {
+  background: #1f2335 !important;
+}
+
+.ace-tomorrow-night-blue .ace_cursor {
+  color: #c0caf5 !important;
+  border-color: #c0caf5 !important;
+}
+
+/* Match the section border to Tokyo Night */
+section.rounded-2xl {
+  border-color: #1f2335 !important;
+  background-color: #1a1b26 !important;
 }
