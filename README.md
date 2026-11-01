@@ -1,14 +1,5 @@
-Shubham's Arena is a small Vim playground for practicing Vim motions and operators.
+# Shubham's Arena (Vim playground)
 
-## Getting Started
+A browser-based playground for practicing Vim motions and operators interactively.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Stack:** Next.js, React, TypeScript, Tailwind CSS.
